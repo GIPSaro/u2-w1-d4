@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Indie Flower", cursive;
+}
+#container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+#cards article {
+  width: 20%;
+  height: 180px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 4px 1px #0000007d;
+  transition: all 0.4s ease-in-out;
+}
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+  background-color: gray;
+}
+
+#card1,
+#card5,
+#card7 {
+  background: linear-gradient(
+    174deg,
+    rgb(236 214 147) 36%,
+    rgba(88, 88, 88, 1) 100%,
+    rgba(113, 113, 113, 1) 100%
+  );
+  transform: rotate(-3deg);
+}
+#card2,
+#card4,
+#card8 {
+  background: linear-gradient(
+    174deg,
+    rgb(209 248 201) 36%,
+    rgba(88, 88, 88, 1) 100%,
+    rgba(113, 113, 113, 1) 100%
+  );
+
+  transform: rotate(7deg);
+}
+#card3,
+#card6 {
+  background: linear-gradient(
+    174deg,
+    rgb(171 167 231) 36%,
+    rgba(88, 88, 88, 1) 100%,
+    rgba(113, 113, 113, 1) 100%
+  );
+  transform: rotate(-7deg);
+}
+h4 {
+  font-size: 1.5em;
+  font-weight: 900;
+  padding: 10px;
+}
+p {
+  font-size: 1em;
+}
+
+#cards article:hover {
+  z-index: 1;
+  transform: scale(1.2);
+  box-shadow: 5px 5px 10px 5px black;
+}
+#card1 {
+  animation: postit 1s;
+}
+#card2 {
+  animation: postit 2s;
+}
+#card3 {
+  animation: postit 3s;
+}
+#card4 {
+  animation: postit 4s;
+}
+#card5 {
+  animation: postit 5s;
+}
+#card6 {
+  animation: postit 6s;
+}
+#card7 {
+  animation: postit 7s;
+}
+#card8 {
+  animation: postit 8s;
+}
+
+@keyframes postit {
+  0% {
+    visibility: hidden;
+  }
+  90% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
