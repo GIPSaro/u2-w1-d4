@@ -40,11 +40,10 @@ main {
   white-space: nowrap;
 }
 .parole i:first-of-type {
-  transform: rotate(270deg);
-  animation: fadein 2s forwards;
+  animation: fadein 2s;
 }
 .parole i:nth-of-type(2) {
-  animation: fadein 2s 2s forwards;
+  animation: fadein 2s 2s;
 }
 .parole i:last-of-type {
   animation: fadein 2s 4s forwards;

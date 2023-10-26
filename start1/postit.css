@@ -21,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 2px 2px 4px 1px #0000007d;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.4s;
 }
 #cards {
   display: flex;
